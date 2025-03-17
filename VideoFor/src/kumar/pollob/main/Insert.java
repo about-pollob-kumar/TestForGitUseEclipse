@@ -12,8 +12,8 @@ public class Insert {
 		Class.forName("com.mysql.cj.jdbc.Driver");
         Connection 	c =DriverManager.getConnection("jdbc:mysql://localhost:3306/Pollob", "root", "Pollob@");
         PreparedStatement p=c.prepareStatement("INSERT INTO PUPC VALUES(?,?,?)");
-           p.setString(1, "fjffjf");
-           p.setString(2, "01714..91" );
+           p.setString(1, "fjfff");
+           p.setString(2, "01714.91" );
            p.setString(3, "pollob@gmail.com");
     
     
@@ -28,6 +28,7 @@ public class Insert {
         	System.out.println("fail");
         }
         
+        System.out.println("all done");
         
         c.close();
         p.close();
